@@ -2,10 +2,14 @@ package uk.co.dcfhosting.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val rollButton = findViewById<TextView>(R.id.roll_button)
+        rollButton.text = "Let's Roll"
     }
 }
